@@ -6,7 +6,7 @@ RUN apt update && \
 
 COPY . .
 
-RUN  pip2 install poetry
+RUN  pip3 install poetry
 RUN  poetry config --local virtualenvs.in-project true && poetry install
 
 CMD ./init.sh
